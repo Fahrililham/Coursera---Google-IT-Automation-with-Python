@@ -174,5 +174,184 @@ We just covered the if statement, which executes code if an evaluation is true a
 
 We also touched on the modulo operator, which is represented by the percent sign: %. This operator performs integer division, but only returns the remainder of this division operation. If we’re dividing 5 by 2, the quotient is 2, and the remainder is 1. Two 2s can go into 5, leaving 1 left over. So 5%2 would return 1. Dividing 10 by 5 would give us a quotient of 2 with no remainder, since 5 can go into 10 twice with nothing left over. In this case, 10%5 would return 0, as there is no remainder.
 
+-- Complex Branching with elif Statements --
+Building off of the if and else blocks, which allow us to branch our code depending on the evaluation of one statement, the elif statement allows us even more comparisons to perform more complex branching. Very similar to the if statements, an elif statement starts with the elif keyword, followed by a comparison to be evaluated. This is followed by a colon, and then the code block on the next line, indented to the right. An elif statement must follow an if statement, and will only be evaluated if the if statement was evaluated as false. You can include multiple elif statements to build complex branching in your code to do all kinds of powerful things!
 
+-- Study Guide: Conditionals --
+This study guide provides a quick-reference summary of what you learned in this lesson and serves as a guide for the upcoming practice quiz.  
+
+In the Conditionals segment, you learned about the built-in Python operators used for comparing values and the logical operators for making complex comparisons. You also learned how to use operators in if-else-elif blocks. 
+
+ 
+
+Knowledge
+Comparison operators with numerical values
+Comparison expressions return a Boolean result (True or False). 
+
+x == y        If x is equal to y, return True. Else, return False.
+
+x != y         If x is not equal to y, return True. Else, return False.
+
+x < y          If x is less than y, return True. Else, return False.
+
+x <= y        If x is less than or equal to y, return True. Else, return False.
+
+x > y          If x is greater than y, return True. Else, return False.
+
+x >= y        If x is greater or equal to y, return True. Else, return False.
+
+Comparison operators with strings
+Comparison expressions with strings also return a Boolean result (True or False).
+
+"x" == "y"  If the words are the same, return True. Else, return False.
+
+"x" != "y"   If the words are not the same, return True. Else, return False.
+
+When used with strings, the following comparison expressions will alphabetize the strings.
+
+"x" < "y"   	If string "x"  has a smaller Unicode value than string "y", return True.  Else, return False.
+
+"x" <= "y" 	If the Unicode value for string "x" is smaller than or equal to the Unicode value of string "y", return True. Else, return False.
+
+"x" > "y"    	If string "x" has a larger Unicode value than string "y", return True. Else, return False.
+
+"x" >= "y"  	If the Unicode value for string "x" is greater than or equal to the Unicode value of string "y", return True. Else, return False.
+
+Logical operators
+Logical operators are used to combine comparison expressions and also return Boolean results (True or False).
+
+comparison1 and comparison2 
+
+Returns a True result if both comparison1 and comparison2 are true. 
+
+If they are not both true, return False.
+
+comparison1 or comparison2 
+
+Returns a True result if either comparison1 and/or comparison2 are True. 
+
+If neither comparison is true, return False.
+
+not comparison1
+
+Returns the inverse Boolean value of the comparison. 
+
+Returns a True result if comparison1 is false. 
+
+If comparison1 is true, then returns False.
+
+Syntax of an if-elif-else block
+If condition1 is True:
+
+Then perform action1 and exit if-elif-else block
+
+If condition2 is True:
+
+Then perform action2 and exit if-elif-else block
+
+If neither condition1 nor condition2 are True:
+
+Then perform action3 and exit if-elif-else block
+
+Python practice information
+For additional Python practice, the following links will take you to several popular online interpreters and codepads:
+
+Welcome to Python
+ 
+
+Online Python Interpreter
+ 
+
+Create a new Repl
+ 
+
+Online Python-3 Compiler (Interpreter)
+
+Compile Python 3 Online
+
+Your Python Trinket
+
+-- Study Guide: Week 2 Graded Quiz --
+It is time to prepare for the Week 2 graded quiz. Please review the following items from this week before starting the Week 2 Graded Quiz. If you would like to refresh your memory on these materials, please revisit the Study Guides located before each Practice Quiz in Week 2 : 
+Study Guide: Expressions and Variables
+, 
+Study Guide: Functions
+, and 
+Study Guide: Conditionals
+.  
+
+Knowledge  
+How to assign values to variables and use them in code
+
+How to construct a function and use function parameters
+
+How comparison and logical operators can be used, 
+
+How comparison and logical operators behave with different data types
+
+What type of results simple and complex comparisons produce
+
+How to alphabetize strings using comparison operators
+
+What must appear after the if and elif keywords
+
+What the elif keyword does 
+
+When an if,  elif, or else-statement will execute
+
+How to use the floor division //  and modulo % operators and why
+
+How to use logical operators with comparison operators to develop complex conditional statements within an if-elif-else block
+
+Best practices for coding and their benefits
+
+What “self-documenting code” means
+
+
+There may be a few questions on the quiz that will ask you about either the output of a small block of code or the value of part of the code. Make sure to read the instructions carefully on those questions.
+
+-- Reminder: Correct syntax is critical --
+Using precise syntax is critical when writing code in any programming language, including Python. Even a small typo can cause a syntax error and the automated Python-coded quiz grader will mark your code as incorrect. This reflects real life coding errors in the sense that a single error in spelling, case, punctuation, etc. can cause your code to fail. Coding problems caused by imprecise syntax will always be an issue whether you are learning a programming language or you are using programming skills on the job. So, it is critical to start the habit of being precise in your code now. 
+
+No credit will be given if there are any coding errors on the automated graded quizzes - including minor errors. Fortunately, you have 3 optional retake opportunities on the graded quizzes in this course. Additionally, you have unlimited retakes on practice quizzes and can review the videos and readings as many times as you need to master the concepts in this course.  
+
+Now, before starting the graded quiz, please review this list of common syntax errors coders make when writing code.
+
+Common syntax errors:
+Misspellings
+
+Incorrect indentations
+
+Missing or incorrect key characters:
+
+Parenthetical types - ( curved ), [ square ], { curly }
+
+Quote types - "straight-double" or 'straight-single', “curly-double” or ‘curly-single’
+
+Block introduction characters, like colons - :
+
+Data type mismatches
+
+Missing, incorrectly used, or misplaced Python reserved words
+
+Using the wrong case (uppercase/lowercase) - Python is a case-sensitive language
+ 
+
+Resources
+For additional Python practice, the following links will take you to several popular online interpreters and codepads:
+
+Welcome to Python
+ 
+
+Online Python Interpreter
+ 
+
+Create a new Repl
+ 
+
+Online Python-3 Compiler (Interpreter)
+
+Compile Python 3 Online
+
+Your Python Trinket
 
